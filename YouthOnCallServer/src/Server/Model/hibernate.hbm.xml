@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="Server.Model.Jobs" table="jobs">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="description" column="description" type="text"/>
+        <property name="pay" column="pay" type="double"/>
+        <property name="memberID" column="memberID" type="int"/>
+        <property name="youthID" column="youthID" type="int"/>
+        <property name="estHours" column="estHours" type="int"/>
+        <property name="status" column="status" type="string"/>
+    </class>
+    <class name="Server.Model.Members" table="members">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="address" column="address" type="string"/>
+        <property name="city" column="city" type="string"/>
+        <property name="st" column="st" type="string"/>
+        <property name="zip" column="zip" type="int"/>
+        <property name="phone" column="phone" type="string"/>
+        <property name="youth" column="youth" type="boolean"/>
+        <property name="password" column="password" type="string"/>
+    </class>
+</hibernate-mapping>
