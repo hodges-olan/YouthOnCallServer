@@ -1,0 +1,5 @@
+Mon Jul 04 23:03:38 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Mon Jul 04 23:04:00 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:1271
+Mon Jul 04 23:04:01 CDT 2016 - INFO - authMember - olanhodges@gmail.com
+Mon Jul 04 23:04:01 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:1272
+Mon Jul 04 23:04:01 CDT 2016 - INFO - retrieveAllJobs - [{"id":22,"name":"Mowing and Edging - larger","description":"Mow and edge both the front and back yard - updated","pay":45.0,"memberID":24,"youthID":0,"estHours":2,"status":"Active"},{"id":23,"name":"Carpet cleaning \u0026 mopping","description":"Clean all carpets upstairs \u0026 mop bathrooms","pay":65.0,"memberID":24,"youthID":0,"estHours":2,"status":"Volunteered"}]
