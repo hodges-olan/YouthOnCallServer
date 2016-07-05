@@ -39,3 +39,4 @@ Tue Jul 05 15:58:31 CDT 2016 - INFO -  - Invalid Command
 Tue Jul 05 16:00:34 CDT 2016 - INFO -  - Invalid Command
 Tue Jul 05 16:02:37 CDT 2016 - INFO -  - Invalid Command
 Tue Jul 05 16:02:39 CDT 2016 - INFO - bye - Session closed
+Tue Jul 05 16:17:00 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890

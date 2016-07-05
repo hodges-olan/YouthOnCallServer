@@ -14,6 +14,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.junit.Test;
@@ -51,6 +52,13 @@ public class YouthOnCallServerTest {
             PrintWriter logFile = new PrintWriter(new FileWriter(filePath, true));
             assertFalse(logFile.checkError());
             
+            // Test Session Factory
+            try (Session session = SESSION_FACTORY.openSession()) {
+                assertTrue(session.isConnected());
+            } catch (Exception ex) {
+                ex.getMessage();
+            }
+        
         } catch (IOException ex) {
             Logger.getLogger(YouthOnCallServer.class.getName()).log(Level.SEVERE, null, ex);
         }
