@@ -5,7 +5,6 @@
  */
 package Server.App;
 
-import com.google.gson.Gson;
 import Server.Control.JobsControl;
 import Server.Control.MembersControl;
 import Server.Model.Jobs;
@@ -31,6 +30,13 @@ public class ClientConnThread implements Runnable {
     // Declare Controller Classes
     private final MembersControl membersControl = new MembersControl();
     private final JobsControl jobsControl = new JobsControl();
+    
+    // Declare App Controller
+    private static final HashMap<String, JsonTranslate> COMMANDS = new HashMap<>();
+    static {
+        COMMANDS.put("toJSON", new JsonTranslateTo());
+        COMMANDS.put("fromJSON", new JsonTranslateFrom());
+    }
     
     // Default Constructor
     public ClientConnThread (Socket socket) throws IOException {
@@ -125,42 +131,37 @@ public class ClientConnThread implements Runnable {
 
     // Create member method
     private void createMember(String data) {
-        Gson membersJSON = new Gson();
-        Members member = membersJSON.fromJson(data, Members.class);
+        Members member = (Members) COMMANDS.get("fromJSON").translate((Object) data, "Members");
         outputStream.println(membersControl.createMember(member));
     }
 
     // Update member method
     private void updateMember(String data) {
-        Gson membersJSON = new Gson();
-        Members member = membersJSON.fromJson(data, Members.class);
+        Members member = (Members) COMMANDS.get("fromJSON").translate((Object) data, "Members");
         membersControl.updateMember(member);
     }
 
     // Retrieve member method
     private String retrieveMember(Integer data) {
         Members member;
-        Gson membersJSON = new Gson();
         member = membersControl.retrieveMember(data);
-        String returnData = membersJSON.toJson(member);
+        String returnData = (String) COMMANDS.get("toJSON").translate((Object) member, "Members");
         return returnData;
     }
 
     // Retrieve all members method
     private String retrieveAllMembers() {
         List<Members> members;
-        Gson membersJSON = new Gson();
         members = membersControl.retrieveAllMembers();
-        String returnData = membersJSON.toJson(members);
+        String returnData = (String) COMMANDS.get("toJSON").translate((Object) members, "Members");
         return returnData;
     }
 
     // Retrieve all youth method
     private String retrieveAllYouth() {
         List<Members> youth;
-        Gson membersJSON = new Gson();
         youth = membersControl.retrieveAllYouth();
-        String returnData = membersJSON.toJson(youth);
+        String returnData = (String) COMMANDS.get("toJSON").translate((Object) youth, "Members");
         return returnData;
     }
 
@@ -171,30 +172,26 @@ public class ClientConnThread implements Runnable {
     }
 
     private void createJob(String data) {
-        Gson jobsJSON = new Gson();
-        Jobs job = jobsJSON.fromJson(data, Jobs.class);
+        Jobs job = (Jobs) COMMANDS.get("fromJSON").translate((Object) data, "Jobs");
         outputStream.println(jobsControl.createJob(job));
     }
 
     private void updateJob(String data) {
-        Gson jobsJSON = new Gson();
-        Jobs job = jobsJSON.fromJson(data, Jobs.class);
+        Jobs job = (Jobs) COMMANDS.get("fromJSON").translate((Object) data, "Jobs");
         jobsControl.updateJob(job);
     }
 
     private String retrieveJob(Integer data) {
         Jobs job;
-        Gson jobsJSON = new Gson();
         job = jobsControl.retrieveJob(data);
-        String returnData = jobsJSON.toJson(job);
+        String returnData = (String) COMMANDS.get("toJSON").translate((Object) job, "Jobs");
         return returnData;
     }
 
     private String retrieveAllJobs() {
         List<Jobs> jobs;
-        Gson jobsJSON = new Gson();
         jobs = jobsControl.retrieveAllJobs();
-        String returnData = jobsJSON.toJson(jobs);
+        String returnData = (String) COMMANDS.get("toJSON").translate((Object) jobs, "Jobs");
         return returnData;
     }
     

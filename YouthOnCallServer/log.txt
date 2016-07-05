@@ -3,3 +3,31 @@ Mon Jul 04 23:04:00 CDT 2016 - INFO - newConnection - New Connection from /127.0
 Mon Jul 04 23:04:01 CDT 2016 - INFO - authMember - olanhodges@gmail.com
 Mon Jul 04 23:04:01 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:1272
 Mon Jul 04 23:04:01 CDT 2016 - INFO - retrieveAllJobs - [{"id":22,"name":"Mowing and Edging - larger","description":"Mow and edge both the front and back yard - updated","pay":45.0,"memberID":24,"youthID":0,"estHours":2,"status":"Active"},{"id":23,"name":"Carpet cleaning \u0026 mopping","description":"Clean all carpets upstairs \u0026 mop bathrooms","pay":65.0,"memberID":24,"youthID":0,"estHours":2,"status":"Volunteered"}]
+Tue Jul 05 12:52:06 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 12:52:13 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48647
+Tue Jul 05 12:57:20 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 12:57:22 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48698
+Tue Jul 05 13:01:35 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 13:01:36 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48733
+Tue Jul 05 13:01:47 CDT 2016 - INFO - authMember - olanhodges@gmail.com
+Tue Jul 05 13:03:28 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 13:03:30 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48763
+Tue Jul 05 13:03:42 CDT 2016 - INFO - retrieveMember - 24
+Tue Jul 05 13:03:42 CDT 2016 - INFO -  - Invalid Command
+Tue Jul 05 13:06:22 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 13:06:25 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48788
+Tue Jul 05 13:06:41 CDT 2016 - INFO - retrieveMember - 24
+Tue Jul 05 13:06:41 CDT 2016 - INFO -  - Invalid Command
+Tue Jul 05 13:07:52 CDT 2016 - INFO - createMember - {"id":1,"name":"Dee Hiatt","email":"deehiatt@gmail.com","address":"3301 Jacobs Drive","city":"McKinney","st":"TX","zip":75070,"phone":"214-666-6666","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"}
+Tue Jul 05 13:10:39 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 13:10:41 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:48816
+Tue Jul 05 15:18:10 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 15:19:03 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:50134
+Tue Jul 05 15:19:29 CDT 2016 - INFO - retrieveJob - 23
+Tue Jul 05 15:19:29 CDT 2016 - INFO -  - Invalid Command
+Tue Jul 05 15:19:36 CDT 2016 - INFO - retrieveJob - 22
+Tue Jul 05 15:19:36 CDT 2016 - INFO -  - Invalid Command
+Tue Jul 05 15:29:05 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 15:29:06 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:50213
+Tue Jul 05 15:29:11 CDT 2016 - INFO - retrieveAllMembers - [{"id":24,"name":"Olan Hodges","email":"olanhodges@gmail.com","address":"3312 Westview Drive","city":"McKinney","st":"TX","zip":75070,"phone":"214-585-2561","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"},{"id":25,"name":"Katherine Hodges","email":"cupkatectr@gmail.com","address":"3312 Westview Drive","city":"McKinney","st":"TX","zip":75070,"phone":"972-369-9015","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"},{"id":28,"name":"Carolyn Hodges","email":"carrieokie8644@yahoo.com","address":"5305 Roadrunner Drive","city":"Durant","st":"OK","zip":74701,"phone":"580-931-7736","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"},{"id":29,"name":"Chad Benson","email":"bluecougarjr@gmail.com","address":"1600 Pecan Point Drive","city":"McKinney","st":"TX","zip":75070,"phone":"940-453-2123","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"},{"id":30,"name":"Rokell Benson","email":"chadnrock@hotmail.com","address":"1600 Pecan Point Drive","city":"McKinney","st":"TX","zip":75070,"phone":"9404532123","youth":false,"password":"ad6a4675bc7bc4a1aa3a2c0ad7367de8f8c54b418c77d1664107d342b307edc2"},{"id":31,"name":"Dee Hiatt","email":"deehiatt@gmail.com","address":"3301 Jacobs Drive","city":"McKinney","st":"TX","zip":75070,"phone":"214-666-6666","youth":false,"password":"97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6"}]
+Tue Jul 05 15:29:35 CDT 2016 - INFO - bye - Session closed
