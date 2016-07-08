@@ -69,3 +69,8 @@ Tue Jul 05 17:16:20 CDT 2016 - INFO - newConnection - New Connection from /127.0
 Tue Jul 05 17:16:20 CDT 2016 - INFO - authMember - olanhodges@gmail.com
 Tue Jul 05 17:16:20 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:53081
 Tue Jul 05 17:16:20 CDT 2016 - INFO - retrieveAllJobs - [{"id":22,"name":"Mowing and Edging - larger","description":"Mow and edge both the front and back yard - updated","pay":45.0,"memberID":24,"youthID":0,"estHours":2,"status":"Active"},{"id":23,"name":"Carpet cleaning \u0026 mopping","description":"Clean all carpets upstairs \u0026 mop bathrooms","pay":65.0,"memberID":24,"youthID":0,"estHours":2,"status":"Volunteered"}]
+Tue Jul 05 19:09:36 CDT 2016 - INFO - Application Started - Server application started and listening on 0.0.0.0/0.0.0.0:7890
+Tue Jul 05 19:09:43 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:61772
+Tue Jul 05 19:09:43 CDT 2016 - INFO - authMember - olanhodges@gmail.com
+Tue Jul 05 19:09:43 CDT 2016 - INFO - newConnection - New Connection from /127.0.0.1:61773
+Tue Jul 05 19:09:43 CDT 2016 - INFO - retrieveAllJobs - [{"id":22,"name":"Mowing and Edging - larger","description":"Mow and edge both the front and back yard - updated","pay":45.0,"memberID":24,"youthID":0,"estHours":2,"status":"Active"},{"id":23,"name":"Carpet cleaning \u0026 mopping","description":"Clean all carpets upstairs \u0026 mop bathrooms","pay":65.0,"memberID":24,"youthID":0,"estHours":2,"status":"Volunteered"}]
