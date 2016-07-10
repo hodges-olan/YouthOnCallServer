@@ -5,11 +5,14 @@
  */
 package Server.App;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
@@ -47,10 +50,30 @@ public class YouthOnCallServerTest {
             ServerSocket serverSocket = new ServerSocket(7890);
             assertTrue(serverSocket.isBound());
             
+            // Test Connection to Server Socket
+            Socket socket = new Socket("127.0.0.1", 7890);
+            assertTrue(socket.isBound());
+            assertTrue(socket.isConnected());
+            
             // Open log file
             String filePath = "log.txt";
             PrintWriter logFile = new PrintWriter(new FileWriter(filePath, true));
             assertFalse(logFile.checkError());
+            
+            // Write to log file
+            logFile.println("This is a test");
+            
+            // Open reader and verify line was saved
+            try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+                String read;
+                ArrayList<String> input = new ArrayList<>();
+                while ((read = br.readLine()) != null) {
+                    input.add(read.trim());
+                }
+                assertEquals(input.get(input.size()-1), "This is a test");
+            } catch (Throwable te) {
+                System.out.println("\nException: " + te.toString());
+            }
             
             // Test Session Factory
             try (Session session = SESSION_FACTORY.openSession()) {

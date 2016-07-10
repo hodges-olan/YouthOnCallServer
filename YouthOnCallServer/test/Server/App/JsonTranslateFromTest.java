@@ -29,7 +29,7 @@ public class JsonTranslateFromTest {
         JsonTranslateFrom instance = new JsonTranslateFrom();
         Members expResult = new Members(24,"Olan Hodges", "olanhodges@gmail.com", "3312 Westview Drive", "McKinney", "TX", 75070, "214-585-2561", false, "97c94ebe5d767a353b77f3c0ce2d429741f2e8c99473c3c150e2faa3d14c9da6");
         Members result = (Members) instance.translate(value, type);
-        assertEquals(expResult.getId(), result.getId());
+        assertEquals(expResult.getId(), result.getId());      
         assertEquals(expResult.getName(), result.getName());
         assertEquals(expResult.getEmail(), result.getEmail());
         assertEquals(expResult.getAddress(), result.getAddress());
